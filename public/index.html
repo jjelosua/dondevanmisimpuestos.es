@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+<meta charset="UTF-8" />
+<title>Dashboard | Where Does My Money Go</title>
+<link rel="stylesheet" type="text/css" media="all" href="http://wheredoesmymoneygo.org/wp-content/themes/wdmmg/style.css" />
+<script type='text/javascript' src='http://wheredoesmymoneygo.org/wp-includes/js/comment-reply.js?ver=20090102'></script>
+<script type='text/javascript' src='http://wheredoesmymoneygo.org/wp-includes/js/jquery/jquery.js?ver=1.4.2'></script>
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://wheredoesmymoneygo.org/wp-includes/wlwmanifest.xml" /> 
+</head>
+
+<body class="page page-id-810 page-template page-template-pagedashboard-php">
+<div id="wrapper" class="hfeed">
+
+	<div id="header">
+		<div id="masthead">
+			<div id="branding" role="banner">
+								<div id="site-title">
+            <a href="http://wheredoesmymoneygo.org/" title="Where Does My Money Go" rel="home">
+            <img src="http://wheredoesmymoneygo.org/wp-content/themes/wdmmg/images/wdmmg-logo.png" alt="WDMMG" />
+            </a>
+				</div>
+				<div id="site-description">Showing you where your taxes get spent</div>
+
+			</div><!-- #branding -->
+
+			<div id="access" role="navigation">
+			  				<div class="skip-link screen-reader-text"><a href="#content" title="Skip to content">Skip to content</a></div>
+								<div class="menu-header"><ul id="menu-main-menu" class="menu"><li id="menu-item-773" class="menu-item menu-item-type-post_type menu-item-773"><a href="http://wheredoesmymoneygo.org/">Home</a></li>
+<li id="menu-item-912" class="menu-item menu-item-type-post_type current-menu-item page_item page-item-810 current_page_item menu-item-912"><a href="http://wheredoesmymoneygo.org/dashboard/">Visualizations</a></li>
+<li id="menu-item-780" class="menu-item menu-item-type-custom menu-item-780"><a href="http://data.wheredoesmymoneygo.org">Data</a></li>
+<li id="menu-item-870" class="menu-item menu-item-type-custom menu-item-870"><a href="http://ask.wheredoesmymoneygo.org">Forum</a></li>
+<li id="menu-item-914" class="menu-item menu-item-type-post_type menu-item-914"><a href="http://wheredoesmymoneygo.org/blog/">Blog</a></li>
+
+<li id="menu-item-913" class="menu-item menu-item-type-post_type menu-item-913"><a href="http://wheredoesmymoneygo.org/about/">About</a>
+<ul class="sub-menu">
+	<li id="menu-item-970" class="menu-item menu-item-type-post_type menu-item-970"><a href="http://wheredoesmymoneygo.org/get-involved/">Get Involved</a></li>
+	<li id="menu-item-969" class="menu-item menu-item-type-post_type menu-item-969"><a href="http://wheredoesmymoneygo.org/getting-started/">Getting Started</a></li>
+</ul>
+</li>
+</ul></div>			</div><!-- #access -->
+		</div><!-- #masthead -->
+	</div><!-- #header -->
+
+	<div id="main">
+
+<!-- WDMMG Dashboard scripts -->
+<script type="text/javascript" src="/_flash/flash/swfobject.js"></script>
+<script type="text/javascript" src="/_flash/flash/swfaddress.js"></script>
+<script type="text/javascript">
+  swfobject.registerObject("wdmmg", "9.0.0");
+</script>
+<script type="text/javascript" src="/_dashboard/callbacks.js"></script>
+<!-- /WDMMG Dashboard Scripts -->
+
+	<div id="content" class="fullwidth">
+
+  <script type="text/dashboard-intro" id="dashboard-intro-uk-bubble-chart">
+    <strong>Hover to see details, click on a bubble to zoom in.</strong>.
+    To see alternatives views select from the menu of visualizations.
+    <a href="#comment">Have a comment?</a>
+  </script>
+
+  <script type="text/dashboard-intro" id="dashboard-intro-daily-bread">
+    <strong>Select your income using the slider and then click the icons to see how your tax is
+    being spent in different areas</strong>.
+    To see alternatives views select from the menu of visualizations.
+    <a href="#comment">Have a comment?</a>
+  </script>
+
+  <script type="text/dashboard-intro" id="dashboard-intro-daily-bread">
+    <strong>Select your income using the slider and then click the icons to see how your tax is
+    being spent in different areas</strong>.
+    To see alternatives views select from the menu of visualizations.
+    <a href="#comment">Have a comment?</a>
+  </script>
+
+    <div id="dashboard-masthead">
+      <h1 id="dashboard-view-title">Spending Dashboard</h1>
+
+      <div id="dashboard-intro-wrapper">
+        <div id="dashboard-intro-controls">
+        </div>
+        <div id="dashboard-intro">
+        </div>
+      </div>
+
+      <div id="dashboard-navigation">
+        <ul id="dashboard-menu" class="flash-menu">
+
+          <li class="uk-bubble-chart">
+            <a href="#" id="uk-bubble-chart" class="minibutton btn-index active" title="See how spending breaks down in our bubble chart">
+              <span>Overview</span>
+            </a>
+          </li>
+          <li class="daily-bread">
+            <a href="#" id="daily-bread" class="minibutton btn-daily-bread" title="Calcluate how much this costs me each day">
+              <span>Daily Bread</span>
+
+            </a>
+          </li>
+          <li class="long-term">
+            <a href="#" id="long-term" class="minibutton btn-long-term" title="View this data in a time chart">
+              <span>Time</span>
+            </a>
+          </li>
+          <li class="comparatron-a">
+
+            <a href="#" id="comparatron-a" class="minibutton btn-compare" title="Compare spending between UK regions">
+              <span>Compare Regions</span>
+            </a>
+          </li>
+          <li class="regional-overview">
+            <a href="#" id="regional-overview" class="minibutton btn-regional" title="Compare spending between UK regions">
+              <span>Regional Overview</span>
+            </a>
+
+          </li>
+        </ul>
+<!--
+        <ul id="dashboard-submenu" class="flash-menu">
+          <li class="sharethis">
+            <span class="st_twitter_hcount" displayText="Tweet"></span>
+            <span class="st_facebook_hcount" displayText="Share"></span>
+            <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script><script type="text/javascript">stLight.options({publisher:'99b03eb4-c4cc-4604-89e9-a2ff6f595e17'});</script>
+
+          </li>
+          <li>
+            Source: <a href="/data/overview/">official UK Government data</a>
+          </li>
+        </ul>
+-->
+      </div>
+
+    </div><!-- /dashboard-masthead -->
+
+		
+    <div id="dashboard-flash-wrapper">
+
+		<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="100%" height="100%" id="wdmmg">
+			<param name="movie" value="/_flash/main.swf" />
+			<param name="flashvars" value="assets=/_flash/flash/"/>
+			<!--[if !IE]>-->
+			<object type="application/x-shockwave-flash" data="/_flash/main.swf" width="100%" height="100%">
+			<param name="flashvars" value="assets=/_flash/flash/"/>
+			<!--<![endif]-->
+
+				<a href="http://www.adobe.com/go/getflashplayer">
+					<img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" />
+				</a>
+			<!--[if !IE]>-->
+			</object>
+			<!--<![endif]-->
+		</object>
+		</div>
+    <br /> 
+
+	</div>
+	
+
+	</div><!-- #main -->
+
+	<div id="footer" role="contentinfo">
+		<div id="colophon">
+
+
+
+			<div id="footer-widget-area" role="complementary">
+
+				<div id="first" class="widget-area">
+					<ul class="xoxo">
+						<li id="text-12" class="widget-container widget_text"><h3 class="widget-title">About</h3>			<div class="textwidget"><ul>
+  <li>
+    <a href="/about/">About</a>
+
+  </li>
+  <li>
+    <a href="/contact/">Contact</a>
+  </li>
+  <li>
+    <a href="/legal/">Terms and Conditions</a>
+  </li>
+  <li>
+
+    <a href="/legal/">Privacy Policy</a>
+  </li>
+</ul></div>
+		</li>					</ul>
+				</div><!-- #first .widget-area -->
+
+				<div id="second" class="widget-area">
+					<ul class="xoxo">
+						<li id="text-13" class="widget-container widget_text"><h3 class="widget-title">Find out more</h3>			<div class="textwidget"><ul>
+
+  <li><a href="/get-involved/">Get Involved</a></li>
+  <li><a href="/getting-started/">Getting Started</a></li>
+  <li><a href="/data/">About the Data</a></li>
+</ul></div>
+		</li>					</ul>
+				</div><!-- #second .widget-area -->
+
+
+				<div id="fourth" class="widget-area">
+					<ul class="xoxo">
+						<li id="text-10" class="widget-container widget_text">			<div class="textwidget"><ul>
+  <li>
+    <img src="http://m.okfn.org/images/logo/okf_logo_white_and_green.png" id="footer-okf-logo" />
+    An
+    <a href="http://www.okfn.org/">Open Knowledge Foundation</a> Project
+  </li>
+
+  <li>
+    &copy; <a href="http://www.okfn.org/">Open Knowledge Foundation</a>
+  </li>
+  <li>
+    <a href="http://opendefinition.org/okd/">
+    <img alt="This Content and Data is Open" src="http://m.okfn.org/images/ok_buttons/oc_80x15_blue.png" style="border: none ; margin-bottom: -4px;"/>
+    </a>
+  </li>
+
+  <li>
+    <a href="http://www.opendefinition.org/okd/">
+    <img alt="This Content and Data is Open" src="http://m.okfn.org/images/ok_buttons/od_80x15_blue.png" style="border: none ; margin-bottom: -4px;"/>
+    </a>
+  </li>
+</ul></div>
+		</li>					</ul>
+				</div><!-- #fourth .widget-area -->
+
+			</div><!-- #footer-widget-area -->
+
+			<div id="site-info">
+				<a href="http://wheredoesmymoneygo.org/" title="Where Does My Money Go" rel="home">
+
+					Where Does My Money Go				</a>
+			</div><!-- #site-info -->
+
+		</div><!-- #colophon -->
+
+	</div><!-- #footer -->
+
+</div><!-- #wrapper -->
+
+<script type="text/javascript">
+function tocToggle(toc, box) {
+	var q = jQuery(toc);
+	if (!q) return;
+	q.slideToggle('fast', function() {
+		jQuery(box).toggleClass('toc-collapsed', q.css('display') == 'none');
+	});
+}
+</script>
+</body>
+</html>
