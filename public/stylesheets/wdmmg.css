@@ -1,0 +1,146 @@
+/*
+# Colors
+- WDMMG red: #830242
+- WDMMG purple: #830242
+*/
+
+body {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  vertical-align: baseline;
+  font-size: 90%;
+  color: #333;
+}
+
+p,blockquote,code,h1,h2,h3,h4,h5,h6 {
+  margin: 1em 0 0 0;
+}
+
+ul,ol {
+  margin-top: 1em;
+  margin-bottom: 0;
+  margin-right: 0;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-weight: normal;
+  font-style: normal;
+  letter-spacing: -0.032em;
+}
+
+
+/* Keep this all in one place so we don't have to update the font list all over
+   the place */
+h1,h2,h3,h4,h5,h6,
+#header #login-and-search,
+.outline-button,
+#footer ul,
+#footer #okfnattrib
+{
+  font-family: "Helvetica Neue", "Helvetica", sans-serif;
+}
+
+body, #header h2 {
+  font-family: "Georgia", serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link, a:visited,
+.widget_rss a.rsswidget:link, .widget_rss a.rsswidget:visited
+{
+  color: #830242;
+}
+
+a:hover, a:active,
+.entry-meta a:hover, .entry-utility a:hover,
+.entry-title a:active, .entry-title a:hover,
+.widget_rss a.rsswidget:hover,
+{
+  color: #d06;
+}
+
+#airlock {
+  margin: 0 auto;
+  width: 95%;
+}
+
+/* Header & Nav */
+
+#header {
+  text-align: right;
+  margin: 1% auto 0 auto;
+  padding: 0 0 5px 0;
+  clear: both;
+}
+
+#header h1 {
+  float: left;
+  text-transform: uppercase;
+  font-size: 40px;
+  margin: 0;
+  padding: 0 0 0 50px;
+}
+
+#header h1 a:link, #header h1 a:visited {
+  color: #333;
+}
+
+#header h1 a:hover, #header h1 a:active {
+  color: #d06;
+}
+
+#header h2 {
+  float: left;
+  clear: left;
+  color: #888;
+  font-style: italic;
+  font-size: 20px;
+  letter-spacing: normal;
+  text-transform: none;
+  margin: 1px 0 0 0;
+  padding: 0 0 0 50px;
+}
+
+#header #login-and-search, #header #nav {
+  padding-right: 50px;
+}
+
+#header #login-and-search {
+  font-size: 1em;
+  padding-bottom: 20px;
+}
+
+#header #nav {
+  clear: right;
+}
+
+/* Main */
+
+#main {
+  margin: 1em 0 0 0;
+  padding: 5px 50px;
+  clear: both;
+  border-top: 1px solid #333;
+  width: auto;
+}
+
+#content p, #content ul, #content ol, #content dd, #content pre, #content hr {
+  margin-bottom: 18px;
+}
+
+/* Allsorts */
+
+input.greyed {
+  color: #aaa;
+  font-style: italic;
+}
+
+#content.fullwidth {
+  width: 100%;
+}
+
