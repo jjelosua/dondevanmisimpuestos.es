@@ -1,0 +1,15 @@
+GEM
+  remote: http://rubygems.org/
+  specs:
+    rack (1.2.1)
+    rack-cache (0.5.3)
+      rack (>= 0.4)
+    sinatra (1.0)
+      rack (>= 1.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  rack-cache
+  sinatra (= 1.0)
