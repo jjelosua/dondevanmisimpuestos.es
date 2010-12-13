@@ -1,7 +1,7 @@
 {
-	"dataStore":"http://localhost:5000/",
-	"mainSite":"http://www.wheredoesmymoneygo.org/",
-	"commentsLocation":"http://www.wheredoesmymoneygo.org/comments/dashboard/?page=",
+	"dataStore":"http://www.dondevanmisimpuestos.es:5000/",
+	"mainSite":"http://www.dondevanmisimpuestos.es/",
+	"commentsLocation":"http://www.dondevanmisimpuestos.es/comments/dashboard/?page=",
 	"infoboxDisabled":false,
 	"dataRequests":{
 		"classification":["es_cofog1", "es_cofog2", "es_cofog3", "region"],
