@@ -1,9 +1,9 @@
 RACK_ENV='development' if not defined?(RACK_ENV)
 
-require 'rubygems'
-require 'bundler'
-
-Bundler.require(:default, RACK_ENV)
+FileUtils.mkdir_p 'log' unless File.exists?('log')
+log = File.new("log/sinatra.log", "a")
+$stdout.reopen(log)
+$stderr.reopen(log)
 
 require 'rack/cache'
 use Rack::Cache,
