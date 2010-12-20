@@ -1,5 +1,5 @@
 {
-	"dataStore":"http://www.dondevanmisimpuestos.es:5000/",
+	"dataStore":"http://data.dondevanmisimpuestos.es/",
 	"mainSite":"http://www.dondevanmisimpuestos.es/",
 	"commentsLocation":"http://www.dondevanmisimpuestos.es/comments/dashboard/?page=",
 	"infoboxDisabled":false,
