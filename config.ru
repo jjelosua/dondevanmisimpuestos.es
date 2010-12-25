@@ -1,3 +1,4 @@
+RACK_ENV=ENV['RACK_ENV']
 RACK_ENV='development' if not defined?(RACK_ENV)
 
 ASSETS_URL= (RACK_ENV=='development') ? '' : 'http://assets.dondevanmisimpuestos.es'
