@@ -1,5 +1,7 @@
 RACK_ENV='development' if not defined?(RACK_ENV)
 
+ASSETS_URL= (RACK_ENV=='development') ? '' : 'http://assets.dondevanmisimpuestos.es'
+
 FileUtils.mkdir_p 'log' unless File.exists?('log')
 log = File.new("log/sinatra.log", "a")
 $stdout.reopen(log)
