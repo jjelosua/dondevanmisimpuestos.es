@@ -82,7 +82,10 @@ WDMMG.Dashboard = function () {
     var viewName = urlParams.view
 
     delete urlParams.view
-
+    
+    // Once Flash is ready, hide loading indication image...
+    $('#dashboard-flash-loading').hide();
+    
     self.changeView(viewName || "uk-bubble-chart", urlParams)
   }
 
