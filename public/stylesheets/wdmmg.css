@@ -59,7 +59,7 @@ a:link, a:visited,
 a:hover, a:active,
 .entry-meta a:hover, .entry-utility a:hover,
 .entry-title a:active, .entry-title a:hover,
-.widget_rss a.rsswidget:hover,
+.widget_rss a.rsswidget:hover
 {
   color: #d06;
 }
