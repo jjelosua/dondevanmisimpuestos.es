@@ -11,6 +11,6 @@ use Rack::Cache,
   :metastore   => 'file:tmp/cache/rack/meta',
   :entitystore => 'file:tmp/cache/rack/body'
 
-require 'sinatra'
+gem 'sinatra', '1.0'
 require 'app'
 run WhereDoMyTaxesGoApp
