@@ -11,12 +11,12 @@ class WhereDoMyTaxesGoApp < Sinatra::Base
     erb :index
   end
   
+  get '/ayuda/' do
+    erb :help
+  end
+    
   get '/sobre-nosotros/' do
     erb :about_us
-  end
-
-  get '/contacto/' do
-    erb :contact
   end
 
   get '/legal/' do
