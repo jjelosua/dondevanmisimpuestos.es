@@ -1,0 +1,197 @@
+/* Basics */
+
+.layout-row {
+  width: 100%;
+  overflow: auto; /* row expands to contain children */
+  margin-bottom: 1%;
+}
+
+.layout-col {
+  margin: 0 0 0 1%;
+  float: left;
+}
+
+.layout-col-1 {
+  clear: left;
+  margin-left: 0;
+}
+
+/* 2 column: 66% 33% */
+
+.layout-2col-66-33 .layout-col-1 {
+  width: 66%;
+}
+
+.layout-2col-66-33 .layout-col-2 {
+  width: 33%;
+}
+
+/* 2 column: 60% 40% */
+
+.layout-2col-60-40 .layout-col-1 {
+  width: 60%;
+}
+
+.layout-2col-60-40 .layout-col-2 {
+  width: 39%;
+}
+
+/* 3 column: 33% each */
+
+.layout-3col-33-33-33 .layout-col {
+  width: 32.5%;
+}
+
+.layout-3col-33-33-33 .layout-col-3 {
+  width: 33%;
+}
+
+.fill-box {
+  overflow: hidden;   
+  font-size: 80%;
+  height: 360px;
+}
+
+.fill-box ul {
+  list-style-type: none;
+  margin-left: 0;
+}
+
+.fill-box ul li {
+  margin-bottom: 8px;
+  line-height: 1.3;
+}
+
+
+#dailybread img {
+  width: 90%;
+  max-width: none;
+  margin: auto;
+  display: block;
+}
+
+img#bubbles-screenshot {
+  width: 80%;
+  display: block;
+  margin: auto;
+}
+
+.outline-button {
+  float: right;
+}
+
+.outline-box {
+  border-radius: 0.7em;
+  -moz-border-radius: 0.7em;
+  -webkit-border-radius: 0.7em;
+  border: 1px solid #C180A0;
+  border: 1px solid #E0BFCF;
+  margin: 0;
+  padding: 1em;
+}
+
+.outline-box h3 {
+  color: #830242;
+  font-size: 1.8em;
+  margin: -0.1em 0 0 0;
+}
+
+.outline-box {
+  font-size: 1.2em;
+  font-style: italic;
+  color: #555;
+  margin-top: 0.4em;
+}
+
+.outline-button {
+  border-radius: 0.3em;
+  -moz-border-radius: 0.3em;
+  -webkit-border-radius: 0.3em;
+  border: 1px solid #830242;
+  padding: 2px 4px;
+}
+
+.outline-button:hover {
+  color: #fff;
+  border-color: #fff;
+  background: #830242;
+}
+
+.figure {
+  margin-top: 1em;
+}
+
+.fill-box {
+  border-radius: 0.7em;
+  -moz-border-radius: 0.7em;
+  -webkit-border-radius: 0.7em;
+  background: #eee;
+  margin: 0;
+  padding: 1em;
+}
+
+.fill-box h3 {
+  margin: 0;
+}
+
+.snippet-reference {
+  margin: 0;
+  font-size: 0.95em;
+  font-style: italic;
+}
+
+/**
+  * Slider
+  */
+
+#frontpage-slider {
+  width: 70%;
+  margin: auto;
+}
+
+#frontpage-slider .ui-widget-content {
+  background: none;
+  background-color: #830242;
+  height: 6px;
+}
+
+#frontpage-slider .ui-slider-horizontal .ui-slider-handle {
+  background: url('images/pound-slider.png') transparent no-repeat;
+  height: 17px;
+  width: 17px;
+  border: none;
+  cursor: auto;
+  margin-left: -0.4em;
+}
+
+#frontpage-slider div#ticks {
+  font-size: 90%;
+  margin-top: 5px;
+}
+
+#frontpage-slider div.tick-min {
+  float: left;
+  margin-left: -5px;
+}
+
+#frontpage-slider div.tick-max {
+  float: right;
+  margin-right: -15px;
+}
+
+#frontpage-slider input#income {
+  border: none;
+  padding: 0;
+  margin: 0;
+  width: 58px;
+}
+
+#frontpage-slider .select-income {
+  text-align: center;
+}
+
+#frontpage-slider .visualize-button {
+  clear: both;
+  margin: auto;
+  text-align: center;
+}

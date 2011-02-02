@@ -1,0 +1,19 @@
+/*
+Theme Name: wdmmg
+Theme URI: http://bitbucket.org/okfn/wdmmg-wp-theme
+Description: WordPress theme for http://wheredoesmymoneygo.org.
+Version: 2.0
+Author: Open Knowledge Foundation
+Author URI: http://www.okfn.org/
+Template: twentyten
+Tags:white, grey, violet, two-column
+License: GPL. CSS, XHTML and design is released under the GPL.
+*/
+
+@import url("style2010.css");
+@import url("frontpage.css");
+@import url("wdmmg.css");
+@import url("fixes.css");
+@import url("forms.css");
+@import url("dashboard.css");
+

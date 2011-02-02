@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>¿Dónde van mis impuestos?</title>
+  <link rel="stylesheet" type="text/css" media="all" href="/stylesheets/style.css" />
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+  
+  <!-- Google Analytics -->
+  <script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-431041-5']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+  </script>
+
+</head>
+
+<body class="page page-template">
+<div id="wrapper" class="hfeed">
+
+	<div id="header">
+		<div id="masthead">
+			<div id="branding" role="banner">
+				<div id="site-title">
+          <a href="http://www.dondevanmisimpuestos.es/" title="¿Dónde van mis impuestos?" rel="home">
+          <img src="/images/wdmmg-logo.png" alt="¿Dónde van mis impuestos?" />
+
+          </a>
+				</div>
+				<div id="site-description" style="margin-left: 20px;">Mostrando en qué se gasta tu dinero</div>
+			</div><!-- #branding -->
+
+			<div id="access" role="navigation">
+  			<div class="skip-link screen-reader-text"><a href="#content" title="Skip to content">Skip to content</a></div>
+  			<div class="menu-header">
+
+  			  <ul id="menu-main-menu" class="menu">
+  			    <li class="menu-item"><a href="/">Home</a></li>
+            <li class="menu-item"><font color="red"><b><a href="/ayuda/">¿Qué es esto?</a></b></font></li>
+            <li class="menu-item"><a href="http://blog.dondevanmisimpuestos.es">Blog</a></li>
+            <li class="menu-item"><a href="/sobre-nosotros/">Nosotros</a></li>
+          </ul>
+        </div>			</div><!-- #access -->
+
+		</div><!-- #masthead -->
+	</div><!-- #header -->
+
+  <div id="main">
+    <!-- WDMMG Dashboard scripts -->
+<script type="text/javascript" src="/_flash/flash/swfobject.js"></script>
+<script type="text/javascript" src="/_flash/flash/swfaddress.js"></script>
+<script type="text/javascript">
+  swfobject.registerObject("wdmmg", "9.0.0");
+</script>
+<script type="text/javascript" src="/_dashboard/callbacks.js"></script>
+
+<!-- /WDMMG Dashboard Scripts -->
+  
+<div id="content" class="fullwidth">
+
+  <script type="text/dashboard-intro" id="dashboard-intro-uk-bubble-chart">
+    <strong>Pasa el cursor por las burbujas para ver más detalles, click para hacer zoom</strong>.
+    Elige una visualización alternativa con los botones a tu derecha.
+    <a href="/sobre-nosotros/">¿Algún comentario?</a>
+  </script>
+
+  <script type="text/dashboard-intro" id="dashboard-intro-daily-bread"> <!-- TODO -->
+    <strong>Select your income using the slider and then click the icons to see how your tax is
+    being spent in different areas</strong>.
+    <a href="/sobre-nosotros/">¿Algún comentario?</a>
+  </script>
+
+  <div id="dashboard-masthead">
+    <h1 id="dashboard-view-title">Spending Dashboard</h1>
+
+    <div id="dashboard-intro-wrapper">
+      <div id="dashboard-intro-controls"/>
+      </div>
+      <div id="dashboard-intro">
+      </div>
+    </div>
+
+    <div id="dashboard-navigation">
+      <ul id="dashboard-menu" class="flash-menu">
+
+        <li class="uk-bubble-chart">
+          <a href="#" id="uk-bubble-chart" title="Desglosa el gasto total"> <!-- class="minibutton btn-index active" -->
+            <!--
+            <span>Overview</span>
+            -->
+          </a>
+        </li>
+        <!--
+        <li class="daily-bread">
+          <a href="#" id="daily-bread" class="minibutton btn-daily-bread" title="Calcula cuanto pago cada día">
+            <span>Daily Bread</span>
+          </a>
+        </li>
+        -->
+      </ul>
+      <ul id="dashboard-submenu" class="flash-menu">
+
+        <li class="sharethis">
+          <span class="st_twitter_button" displayText="Tweet"></span>
+          <span class="st_facebook_button" displayText="Comparte"></span>
+          <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script><script type="text/javascript">stLight.options({publisher:'561b6ede-ce4a-4f05-86f0-62f1df805141'});</script>
+        </li>
+        <li>
+          Fuente: <a href="http://www.sgpg.pap.meh.es/sitios/sgpg/es-ES/Presupuestos/Paginas/pge2011.aspx" target="_blank">Presupuestos Generales del Estado</a>
+
+        </li>
+      </ul>
+    </div>
+
+  </div><!-- /dashboard-masthead -->
+	  
+  <div id="dashboard-flash-wrapper">
+  	<div id="dashboard-flash-loading">
+  	  Descargando visualización. Por favor espere...
+  	  <img src="/images/loading.gif"/>
+  	</div>
+
+  	
+		<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="100%" height="100%" id="wdmmg">
+			<param name="movie" value="./_flash/main.swf" />
+			<param name="flashvars" value="assets=./_flash/flash/"/>
+			<!--[if !IE]>-->
+			<object type="application/x-shockwave-flash" data="./_flash/main.swf" width="100%" height="100%">
+			<param name="flashvars" value="assets=./_flash/flash/"/>
+			<!--<![endif]-->
+				<a href="http://www.adobe.com/go/getflashplayer">
+					<img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" />
+
+				</a>
+			<!--[if !IE]>-->
+			</object>
+			<!--<![endif]-->
+		</object>
+		
+		<p>NOTA: "1b" equivale a un billón anglosajón, un millardo, mil millones. 
+	</div>
+  <br /> 
+  <br /> 
+  <br /> 
+  <br />
+
+  <br /> 
+  <br />
+</div>
+
+
+
+  </div><!-- #main -->
+  
+
+	<div id="footer" role="contentinfo">
+		<div id="colophon">
+			<div id="footer-widget-area" role="complementary">
+			  
+				<div id="first" class="widget-area">
+
+					<ul class="xoxo">
+						<li id="text-12" class="widget-container widget_text">
+						  <h3 class="widget-title">Más información: </h3>			
+					    <div class="textwidget">
+					      <ul>
+                  <li>
+                    <a href="/sobre-nosotros/">Sobre nosotros</a>
+                  </li>
+
+                  <li>
+                    <a href="http://data.dondevanmisimpuestos.es">API</a>
+                  </li>
+                  <li>
+                    <a href="/legal/">Normas de Uso</a>
+                  </li>
+                  <li>
+                    <a href="/legal/">Política de Privacidad</a>
+
+                  </li>
+                </ul>
+              </div>
+        		</li>
+					</ul>
+				</div><!-- #first .widget-area -->
+
+				<div id="fourth" class="widget-area">
+					<ul class="xoxo">
+
+						<li id="text-10" class="widget-container widget_text">			
+						  <div class="textwidget">
+						    <ul>
+                  <li>
+                    Un proyecto de la 
+                    <img src="http://m.okfn.org/images/logo/okf_logo_white_and_green.png" id="footer-okf-logo" />
+                    <a href="http://www.okfn.org/">Open Knowledge Foundation</a> y 
+                    <a href="http://www.probp.org/">Pro Bono Publico</a>
+                  </li>
+
+                  <li>
+                    &copy; <a href="http://www.okfn.org/">Open Knowledge Foundation</a> y <a href="http://www.probp.org/">Pro Bono Publico</a>
+                  </li>
+                </ul>
+              </div>
+		        </li>
+
+		      </ul>
+				</div><!-- #fourth .widget-area -->
+
+			</div><!-- #footer-widget-area -->
+
+			<div id="site-info">
+				<a href="http://www.dondevanmisimpuestos.es/" title="¿Dónde van mis impuestos?" rel="home">
+					¿Dónde van mis impuestos?</a>
+			</div><!-- #site-info -->
+
+		</div><!-- #colophon -->
+	</div><!-- #footer -->
+
+</div><!-- #wrapper -->
+
+</body>
+</html>

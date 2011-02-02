@@ -1,0 +1,329 @@
+/* fixes for inherited styles */
+
+/* =Structure
+-------------------------------------------------------------- */
+
+#content {
+	margin-bottom: 12px;
+	margin-left: 0;
+}
+
+/* The main theme structure */
+#access .menu-header,
+div.menu,
+#colophon,
+#branding,
+#wrapper {
+	margin: 0;
+	width: auto;
+}
+
+#wrapper {
+	background: #fff;
+	margin-top: 0;
+	padding: 0;
+    margin: 0 auto;
+    width: 95%;
+}
+
+/* =Header
+-------------------------------------------------------------- */
+
+#header {
+	padding: auto;
+	padding-bottom: 0px;
+}
+
+#site-title {
+  line-height: normal;
+  width: auto;
+  float: left;
+  text-transform: uppercase;
+  font-size: 40px;
+  margin: 0;
+  padding: 0 0 0 50px;	
+  font-weight: normal;
+  letter-spacing: -0.032em;
+}
+
+#site-title a {
+  font-weight:normal;
+}
+
+#site-title a:link, #site-title a:visited {
+  color: #333;
+}
+
+#site-title a:hover, #site-title a:active {
+  color: #d06;
+}
+
+/* hide the main twentyten image */
+#branding img {
+	display:none;
+}
+
+#site-title a img {
+  background: transparent;
+  display: block;
+  border: none;
+  margin: 0;
+}
+
+#site-description {
+  width:auto;
+  float: left;
+  clear: left;
+  color: #888;
+  font-style: italic;
+  font-size: 15px;
+  letter-spacing: normal;
+  text-transform: none;
+  margin: 0;
+  margin-top: -5px;
+  padding: 0 0 0 50px;
+}
+
+/* =Menu
+-------------------------------------------------------------- */
+#header #access {
+  clear: right;
+}
+
+#access {
+	background: #fff;
+	display: inline;
+	float: right;
+	margin: auto;
+	margin-right: 50px;
+  margin-top: -10px;
+	width: auto;
+}
+#access .menu-header,
+div.menu {
+	font-size: inherit;
+	margin-left: 0;
+	width: auto;
+}
+#access .menu-header ul,
+div.menu ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+#access .menu-header li,
+div.menu li {
+	display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+#access a {
+	color: #aaa;
+	display: block;
+	line-height: 30px;
+	padding: 0 10px;
+	text-decoration: none;
+	font-family: "Georgia", serif;
+}
+
+#access ul li a {
+  color: #888;
+  font-style: italic;
+  text-decoration: none;
+  padding: 0 0.4em 3px 0.4em;
+  margin: 0 0.2em 0 0.1em;
+  outline: none !important;
+}
+
+#access ul li a:hover {
+  color: #333;
+}
+
+#access ul ul {
+  top: 30px;
+}
+
+#access ul ul li {
+	min-width: 180px;
+}
+
+#access ul ul a {
+  background: #fff;
+	padding: 10px;
+	width: 160px;
+	height: auto;
+  text-align: left;
+}
+
+#access li:hover > a,
+#access ul ul :hover > a {
+	background: #fff;
+	color: #333;
+}
+#access ul li:hover > ul {
+	display: block;
+}
+
+#access ul li.current_page_item > a,
+#access ul li.current-menu-ancestor > a,
+#access ul li.current-menu-item > a,
+#access ul li.current-menu-parent > a {
+	color: #333;
+	cursor: default;
+  font-weight: bold;
+}
+* html #access ul li.current_page_item a,
+* html #access ul li.current-menu-ancestor a,
+* html #access ul li.current-menu-item a,
+* html #access ul li.current-menu-parent a,
+* html #access ul li a:hover {
+	color: #333;
+	cursor: default;
+  font-weight: bold;
+}
+
+/* =Content
+-------------------------------------------------------------- */
+
+.entry-content, .entry-summary {
+  padding-top: 0px;
+}
+
+#main {
+  padding-top: 1em;
+}
+
+/* =Sidebar
+-------------------------------------------------------------- */
+
+#primary ul.xoxo {
+  margin-top: 0px;
+}
+
+#primary, #secondary {
+  width: 240px;
+}
+
+#primary .widget-container {
+  border-radius: 0.7em;
+  -moz-border-radius: 0.7em;
+  -webkit-border-radius: 0.7em;
+  background: #eee;
+  padding: 1em;
+  padding-top: 0.5em;
+}
+
+#primary .widget-title {
+  font-weight: normal;
+  margin-top: 0;
+}
+
+#main .widget-area ul {
+  padding-right: 0;
+}
+
+#primary .widget-container .textwidget {
+  margin-top: 0.5em;
+}
+
+/* =Footer
+-------------------------------------------------------------- */
+
+#footer {
+  border-top: 1px solid;
+  margin: 1em auto 0 auto;
+  overflow: auto;
+}
+
+#colophon {
+	border-top: none;
+    margin: 0 50px;
+}
+
+#footer ul {
+  margin-top: 0;
+}
+
+#footer-widget-area .widget-area {
+  float: none; 
+	font-size: 80%;
+  width: 100%;
+  margin: 0;
+}
+
+#footer-widget-area .widget-container {
+  margin-bottom: 0;
+}
+
+#footer-widget-area .widget-container h3 {
+  display: inline-block;
+  margin-top: 0;
+  margin-right: 10px;
+}
+
+#footer-widget-area .widget-container .textwidget {
+  display: inline;
+}
+
+
+#footer-widget-area .widget-container ul {
+  display: inline;
+  margin: 0.3em 0 0 0;
+}
+
+#footer ul li abbr {
+  border-bottom: none;
+}
+
+#footer-widget-area .widget-container ul li {
+  margin: 0 1em 0 0;
+  padding: 0;
+  display: inline-block;
+}
+
+#footer-widget-area #fourth {
+	margin-right: 0;
+}
+
+#site-info {
+  display: none;
+}
+
+#site-generator {
+  display: none;
+}
+
+img#c4_logo {
+  height: 30px;
+  margin-bottom: -6px;
+  margin-left: 3px;
+}
+
+img#footer-okf-logo {
+  margin-bottom: -8px;
+  height: 25px;
+}
+
+/* =Miscellaneous
+-------------------------------------------------------------- */
+
+/* Restore entry titles to default values (same as in main body of text) */
+#content .entry-title {
+  font-weight: normal;
+  line-height: 1.5em;
+}
+
+#content h1.entry-title {
+  font-size: 2em;
+}
+
+#content h2.entry-title {
+  font-size: 1.5em;
+}
+
+/* Don't show page titles */
+.type-page .entry-title {
+    display:none;
+}
+
