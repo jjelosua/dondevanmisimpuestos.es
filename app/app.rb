@@ -1,11 +1,15 @@
 require 'sinatra/base'
 require 'erb'
 
+require 'app/partials'
+
 class WhereDoMyTaxesGoApp < Sinatra::Base
 
   # Enable serving of static files
   set :static, true
   set :public, 'public'
+
+  helpers Sinatra::Partials
   
   get '/' do
     erb :index
