@@ -5,92 +5,46 @@
   swfobject.registerObject("wdmmg", "9.0.0");
 </script>
 <script type="text/javascript" src="<%=ASSETS_URL%>/_dashboard/callbacks.js"></script>
-<!-- /WDMMG Dashboard Scripts -->
   
-<div id="content" class="fullwidth">
-
-  <script type="text/dashboard-intro" id="dashboard-intro-uk-bubble-chart">
-    <strong>Pasa el cursor por las burbujas para ver más detalles, click para hacer zoom</strong>.
-    Elige una visualización alternativa con los botones a tu derecha.
-    <a href="/sobre-nosotros/">¿Algún comentario?</a>
-  </script>
-
-  <script type="text/dashboard-intro" id="dashboard-intro-daily-bread"> <!-- TODO -->
-    <strong>Select your income using the slider and then click the icons to see how your tax is
-    being spent in different areas</strong>.
-    <a href="/sobre-nosotros/">¿Algún comentario?</a>
-  </script>
-
-  <div id="dashboard-masthead">
-    <h1 id="dashboard-view-title">Spending Dashboard</h1>
-
-    <div id="dashboard-intro-wrapper">
-      <div id="dashboard-intro-controls"/>
-      </div>
-      <div id="dashboard-intro">
-      </div>
-    </div>
-
-    <div id="dashboard-navigation">
-      <ul id="dashboard-menu" class="flash-menu">
-        <li class="uk-bubble-chart">
-          <a href="#" id="uk-bubble-chart" title="Desglosa el gasto total"> <!-- class="minibutton btn-index active" -->
-            <!--
-            <span>Overview</span>
-            -->
-          </a>
-        </li>
-        <!--
-        <li class="daily-bread">
-          <a href="#" id="daily-bread" class="minibutton btn-daily-bread" title="Calcula cuanto pago cada día">
-            <span>Daily Bread</span>
-          </a>
-        </li>
-        -->
-      </ul>
-      <ul id="dashboard-submenu" class="flash-menu">
-        <li class="sharethis">
-          <span class="st_twitter_button" displayText="Tweet"></span>
-          <span class="st_facebook_button" displayText="Comparte"></span>
-          <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script><script type="text/javascript">stLight.options({publisher:'561b6ede-ce4a-4f05-86f0-62f1df805141'});</script>
-        </li>
-        <li>
-          Fuente: <a href="http://www.sgpg.pap.meh.es/sitios/sgpg/es-ES/Presupuestos/Paginas/pge2011.aspx" target="_blank">Presupuestos Generales del Estado</a>
-        </li>
-      </ul>
-    </div>
-
-  </div><!-- /dashboard-masthead -->
-	  
-  <div id="dashboard-flash-wrapper">
+<div class="row">
+  <div id="dashboard-intro-uk-bubble-chart" class="span6 offset1 clear">
+    <p>
+      <strong>Pasa el cursor por las burbujas para ver más detalles, click para hacer zoom</strong>.
+      NOTA: "1b" equivale a un billón anglosajón, un millardo, mil millones.<br/>
+      Fuente: <a href="http://www.sgpg.pap.meh.es/sitios/sgpg/es-ES/Presupuestos/Paginas/pge2011.aspx" target="_blank">Presupuestos Generales del Estado</a><br/>
+    </p>
+  </div>
+    
+  <div id="dashboard-flash-wrapper" class="span16">
   	<div id="dashboard-flash-loading">
   	  Descargando visualización. Por favor espere...
   	  <img src="/images/loading.gif"/>
   	</div>
-  	
-		<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="100%" height="100%" id="wdmmg">
-			<param name="movie" value="/_flash/main.swf" />
-			<param name="flashvars" value="assets=/_flash/flash/"/>
-			<!--[if !IE]>-->
-			<object type="application/x-shockwave-flash" data="/_flash/main.swf" width="100%" height="100%">
-			<param name="flashvars" value="assets=/_flash/flash/"/>
-			<!--<![endif]-->
-				<a href="http://www.adobe.com/go/getflashplayer">
-					<img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" />
-				</a>
-			<!--[if !IE]>-->
-			</object>
-			<!--<![endif]-->
-		</object>
-		
-		<p>NOTA: "1b" equivale a un billón anglosajón, un millardo, mil millones. 
-	</div>
-  <br /> 
-  <br /> 
-  <br /> 
-  <br />
-  <br /> 
-  <br />
+	
+  	<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="940" height="600" id="wdmmg">
+  		<param name="movie" value="/_flash/main.swf" />
+  		<param name="flashvars" value="assets=/_flash/flash/"/>
+  		<!--[if !IE]>-->
+  		<object type="application/x-shockwave-flash" data="/_flash/main.swf" width="940" height="600">
+  		<param name="flashvars" value="assets=/_flash/flash/"/>
+  		<!--<![endif]-->
+  			<a href="http://www.adobe.com/go/getflashplayer">
+  				<img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" />
+  			</a>
+  		<!--[if !IE]>-->
+  		</object>
+  		<!--<![endif]-->
+  	</object>	
+  </div>
+  
+  <div id="dashboard-masthead" class="span6 offset1">
+    <ul id="dashboard-submenu" class="unstyled">
+      <li class="sharethis">
+        <span class="st_twitter_button" displayText="Tweet"></span>
+        <span class="st_facebook_button" displayText="Comparte"></span>
+        <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script><script type="text/javascript">stLight.options({publisher:'561b6ede-ce4a-4f05-86f0-62f1df805141'});</script>
+        <a href="/sobre-nosotros/">¿Algún comentario?</a>
+      </li>
+    </ul>
+  </div>
 </div>
-
-

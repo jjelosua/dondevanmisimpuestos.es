@@ -1,105 +1,90 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
   <meta charset="UTF-8" />
   <title>¿Dónde van mis impuestos?</title>
-  <link rel="stylesheet" type="text/css" media="all" href="<%=ASSETS_URL%>/stylesheets/style.css" />
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+  
+  <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
 
+  <link rel="stylesheet" href="http://twitter.github.com/bootstrap/1.4.0/bootstrap.min.css">
+  <link rel="stylesheet" href="/stylesheets/style.css">
+
+  <script src="http://code.jquery.com/jquery-1.5.2.min.js"></script>    
   <%= partial 'partials/analytics' %>
 </head>
 
-<body class="page page-template">
-<%= partial 'partials/begin_body' %>
+<body>
+<!--
+  <%= partial 'partials/begin_body' %>
+-->
+  <!-- Topbar
+  ================================================== -->
+  <div class="topbar">
+    <div class="topbar-inner">
+      <div class="container">
+        <a class="brand" href="/">¿Dónde van mis impuestos?</a>
 
-<div id="wrapper" class="hfeed">
-	<div id="header">
-		<div id="masthead">
-			<div id="branding" role="banner">
-				<div id="site-title">
-          <a href="http://www.dondevanmisimpuestos.es/" title="¿Dónde van mis impuestos?" rel="home">
-          <img src="<%=ASSETS_URL%>/images/wdmmg-logo.png" alt="¿Dónde van mis impuestos?" />
-          </a>
-				</div>
-				<div id="site-description" style="margin-left: 20px;">Mostrando en qué se gasta tu dinero</div>
-			</div><!-- #branding -->
+        <ul class="nav secondary-nav">
+          <li><a href="/">Inicio</a></li>
+          <li><a href="/ayuda/">¿Qué es esto?</a></li>
+          <li><a href="/sobre-nosotros/">Sobre nosotros</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
-			<div id="access" role="navigation">
-  			<div class="skip-link screen-reader-text"><a href="#content" title="Skip to content">Skip to content</a></div>
-  			<div class="menu-header">
-  			  <ul id="menu-main-menu" class="menu">
-  			    <li class="menu-item"><a href="/">Home</a></li>
-            <li class="menu-item"><font color="red"><b><a href="/ayuda/">¿Qué es esto?</a></b></font></li>
-            <li class="menu-item"><a href="http://blog.dondevanmisimpuestos.es">Blog</a></li>
-            <li class="menu-item"><a href="/sobre-nosotros/">Nosotros</a></li>
+  <!-- Masthead (blueprinty thing)
+  ================================================== -->
+  <header class="jumbotron masthead" id="overview">
+    <div class="inner">
+      <div class="container">
+        <h1>¿Dónde van mis impuestos?</h1>
+        <p class="lead">
+          Una visualización de los Presupuestos Generales del Estado en España.<br />
+        </p>
+        <p>"Un cínico conoce el coste de todo y el valor de nada.", Oscar Wilde</p>
+      </div>
+    </div>
+  </header>
+        
+  <div class="container">
+    <section id="main">
+      <%= yield %>
+    </section>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="span4 offset1">
+          <h5>Más información</h5>			
+          <ul class="unstyled">
+            <li><a href="/sobre-nosotros/">Sobre nosotros</a></li>
+            <li><a href="http://blog.dondevanmisimpuestos.es">Blog</a></li>
+            <li><a href="http://data.dondevanmisimpuestos.es">API</a></li>
+            <li><a href="/legal/">Normas de Uso</a></li>
+            <li><a href="/legal/">Política de Privacidad</a></li>
           </ul>
-        </div>			</div><!-- #access -->
-		</div><!-- #masthead -->
-	</div><!-- #header -->
-
-  <div id="main">
-    <%= yield %>
-  </div><!-- #main -->
-  
-
-	<div id="footer" role="contentinfo">
-		<div id="colophon">
-			<div id="footer-widget-area" role="complementary">
-			  
-				<div id="first" class="widget-area">
-					<ul class="xoxo">
-						<li id="text-12" class="widget-container widget_text">
-						  <h3 class="widget-title">Más información: </h3>			
-					    <div class="textwidget">
-					      <ul>
-                  <li>
-                    <a href="/sobre-nosotros/">Sobre nosotros</a>
-                  </li>
-                  <li>
-                    <a href="http://data.dondevanmisimpuestos.es">API</a>
-                  </li>
-                  <li>
-                    <a href="/legal/">Normas de Uso</a>
-                  </li>
-                  <li>
-                    <a href="/legal/">Política de Privacidad</a>
-                  </li>
-                </ul>
-              </div>
-        		</li>
-					</ul>
-				</div><!-- #first .widget-area -->
-
-				<div id="fourth" class="widget-area">
-					<ul class="xoxo">
-						<li id="text-10" class="widget-container widget_text">			
-						  <div class="textwidget">
-						    <ul>
-                  <li>
-                    Un proyecto de la 
-                    <img src="http://m.okfn.org/images/logo/okf_logo_white_and_green.png" id="footer-okf-logo" />
-                    <a href="http://www.okfn.org/">Open Knowledge Foundation</a> y 
-                    <a href="http://www.probp.org/">Pro Bono Publico</a>
-                  </li>
-                  <li>
-                    &copy; <a href="http://www.okfn.org/">Open Knowledge Foundation</a> y <a href="http://www.probp.org/">Pro Bono Publico</a>
-                  </li>
-                </ul>
-              </div>
-		        </li>
-		      </ul>
-				</div><!-- #fourth .widget-area -->
-
-			</div><!-- #footer-widget-area -->
-
-			<div id="site-info">
-				<a href="http://www.dondevanmisimpuestos.es/" title="¿Dónde van mis impuestos?" rel="home">
-					¿Dónde van mis impuestos?</a>
-			</div><!-- #site-info -->
-		</div><!-- #colophon -->
-	</div><!-- #footer -->
-
-</div><!-- #wrapper -->
-
+        </div>
+        <div class="span8">
+          <h5>Sobre dondevanmisimpuestos.es</h5>			
+          <p>
+            Un proyecto de la <a href="http://www.okfn.org/">Open Knowledge Foundation</a> y 
+            <a href="http://www.probp.org/">Pro Bono Publico</a>
+          </p>
+          <p>
+            &copy; <a href="http://www.okfn.org/">Open Knowledge Foundation</a> y 
+            <a href="http://www.probp.org/">Pro Bono Publico</a>
+          </p>
+        </div>
+        <div class="span3">
+          <img src="http://m.okfn.org/images/logo/okf_logo_white_and_green.png" id="footer-okf-logo" />
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>

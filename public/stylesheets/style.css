@@ -1,19 +1,51 @@
-/*
-Theme Name: wdmmg
-Theme URI: http://bitbucket.org/okfn/wdmmg-wp-theme
-Description: WordPress theme for http://wheredoesmymoneygo.org.
-Version: 2.0
-Author: Open Knowledge Foundation
-Author URI: http://www.okfn.org/
-Template: twentyten
-Tags:white, grey, violet, two-column
-License: GPL. CSS, XHTML and design is released under the GPL.
-*/
+body {
+    padding-top: 40px;
+}
 
-@import url("style2010.css");
-@import url("frontpage.css");
-@import url("wdmmg.css");
-@import url("fixes.css");
-@import url("forms.css");
-@import url("dashboard.css");
+.footer {
+    background-color: #EEEEEE;
+    border-top: 1px solid #E5E5E5;
+    min-width: 940px;
+    padding: 15px 0;
+    text-shadow: 0 1px 0 #FFFFFF;
+}
 
+.footer p {
+    color: #555555;
+}
+
+.jumbotron {
+    min-width: 940px;
+}
+.jumbotron .inner {
+    background: url("http://subtlepatterns.com/patterns/old_mathematics.png") repeat scroll center top transparent;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3) inset;
+    padding: 45px 0;
+}
+.jumbotron h1, .jumbotron p {
+    color: #222;
+    margin-bottom: 9px;
+    text-align: center;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+}
+.jumbotron h1 {
+    font-size: 54px;
+    line-height: 1;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+.jumbotron p {
+    font-weight: 300;
+}
+.jumbotron .lead {
+    font-size: 20px;
+    line-height: 27px;
+}
+.masthead {
+    background-color: #049CD9;
+    background-image: -moz-linear-gradient(#004D9F, #049CD9);
+    background-repeat: no-repeat;
+}
+
+section {
+    padding-top: 40px;
+}
