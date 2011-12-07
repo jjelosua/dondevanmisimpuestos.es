@@ -217,7 +217,7 @@ function updateColors() {
         var l = k - c;
     }
     if (_selectedRegion != null && g == !1 && _selectedRegion.ID == h) return "#000000";
-    if (_overRegion != null && _overRegion.ID == h && g == !1) return "#0000FF";
+    if (_overRegion != null && _overRegion.ID == h && g == !1) return "#666";
     return interp(l / (f - c))
   };
     
@@ -229,7 +229,7 @@ function updateColors() {
   _overRegion != null && _selectedRegion == null && (regOverColor = getRegionColor(_overRegion.data, _overRegion.ID, c, b, !0));
 	_selectedRegion != null && (regOverColor = getRegionColor(_selectedRegion.data, _selectedRegion.ID, c, b, !0));
 	
-	f.transition(500).style("fill", function (a, d) {
+	f.transition(300).style("fill", function (a, d) {
     return getRegionColor(a, d, c, b, !1)
   });
 	prevItemRegion != null ? prevItemRegion = null : prevItemRegion = g
