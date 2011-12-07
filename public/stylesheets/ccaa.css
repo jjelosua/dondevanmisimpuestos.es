@@ -1,0 +1,232 @@
+#controls {
+    position: relative;
+    top: -500px;
+    left: 60px;
+}
+
+.selectYear{
+	color: #4D4D4D;
+	font-size: 14px;
+    height: 23px;
+    line-height: 39px;
+    margin-top:5px;
+    width: 78px;
+}
+
+.playButton{
+	background-image: url("/images/play.png");
+    background-repeat: no-repeat;
+    cursor: pointer;
+    height: 26px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:5px;
+    width: 27px;
+}
+
+.option-radio-text{
+	color: #4D4D4D;
+}
+
+.vis-detail{
+	background-color: #04819E;
+    float: left;
+    height: 90px;
+    margin-left: 530px;
+    margin-top: 25px;
+    width: 165px;
+    color:#FFFFFF;
+    font-weight:bold;
+    text-align: center;
+	display: none;
+}
+
+.option-radio-container{
+	float: left;
+    margin-left: 30px;
+}
+
+svg {
+  width: 600px;
+  height: 500px;
+  /*border: solid 1px #ccc;
+  background: #eee;*/
+}
+
+#states path {
+  fill: #ccc;
+  stroke: #fff;
+  cursor: pointer; 
+  cursor: hand;
+}
+
+#functionsKey
+{
+    background: none repeat scroll 0 0 #FFFFFF;
+    color: #999999;
+    font-size: 13px;
+    cursor: pointer;
+    line-height: 15px;
+    margin-top: 40px;
+    margin-left: 660px;
+    position: absolute;
+    width: 350px;
+}
+
+#functionsKey.text{
+}
+
+#functionsKey div.bar{
+    position: absolute;
+    background-color: #cccccc;
+    margin-top: 2px;
+    color: white;
+    height: 12px ;
+}
+
+#barchart
+{
+    height: 300px;
+    top: 400px;
+    width: 300px;
+    margin-left: 530px;
+    margin-top: 25px;
+    position: absolute;
+	text-align: right;
+}
+
+#barchart div.text
+{
+
+}
+
+#infobox
+{
+	width: 220px;
+	padding: 15px 15px 15px 15px;
+	position:absolute;
+	left:300px;
+	top:330px
+}
+
+#infobox div.title
+{
+	/*Tamaño fuente del título: P.Ej: Italia*/
+	font-weight:bold;
+	font-size: 22px;
+}
+
+#infobox div.value
+{
+	font-weight:bold;
+	/*Tamaño fuente del importe: P.Ej: 13000*/
+	font-size: 35px;
+    line-height: 40px;
+	margin-bottom: -10px;
+}
+
+#infobox div.desc
+{
+	margin-top: 5px;
+	/*Tamaño fuente del resumen: P.Ej: Budget pro capite*/
+	font-size: 20px;
+}
+
+#infobox div.avg
+{
+	width:190px;
+	margin-top:10px;
+	height:30px;
+}
+
+#infobox .infobarbg
+{
+	position:absolute;
+	background-color:#f0f0f0;
+	width:190px;
+	height:12px;
+}
+
+#infobox .infobar
+{
+	position:absolute;
+	background-color:#000000;
+	height:12px;
+}
+
+#infobox .infobarimg
+{
+	background-image: url('/images/colorbar.png');
+	background-repeat: repeat-y;
+	position:absolute;
+	width:190px;
+	height:12px;
+}
+
+#infobox .infoavg
+{
+	position:absolute;
+	margin-top:15px;
+	font-size: 15px;
+}
+
+#yearnavbar span.yearselect
+{
+    font-weight:bold;
+    cursor: pointer; 
+    cursor: hand;
+}
+
+#playBtn
+{
+    width: 7px;
+    height: 14px;
+    margin-top: 3px;
+    margin-right: 10px;
+    cursor: pointer; 
+    cursor: hand;
+}
+
+.pause
+{
+    background-image: url('/images/pause.icon.png');
+	width: 7px;
+	height: 14px;
+	margin-top: 3px;
+	margin-right: 10px;
+}
+
+.play
+{
+    background-image: url('/images/play.icon.png');
+	width: 7px;
+	height: 14px;
+	margin-top: 3px;
+	margin-right: 10px;
+}
+
+#leyenda
+{
+    position: relative;
+    top: -80px;
+}
+
+#leyendabg
+{	
+    background-image: url('/images/gradient.png');
+    background-repeat: repeat-y;
+    height:6px;
+}
+
+a
+{
+     border-bottom: 1px dotted #ba0000;
+}
+
+a:hover {
+     border-bottom: 1px solid #ba0000;
+}
+
+a.nolink {
+     border-bottom: none;
+}

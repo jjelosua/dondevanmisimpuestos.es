@@ -18,7 +18,7 @@ body {
     min-width: 940px;
 }
 .jumbotron .inner {
-    background: url("http://subtlepatterns.com/patterns/old_mathematics.png") repeat scroll center top transparent;
+    background: url("/images/old_mathematics.png") repeat scroll center top transparent;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3) inset;
     padding: 45px 0;
 }

@@ -15,6 +15,10 @@ class WhereDoMyTaxesGoApp < Sinatra::Base
     erb :index
   end
   
+  get '/ccaa/' do
+    erb :ccaa
+  end
+  
   get '/ayuda/' do
     erb :help
   end
