@@ -553,20 +553,20 @@ function formatValueShort(a) {
   var b = 1e3,
       c = 1e6,
       d = 1e9,
-      e = " \u20ac",
+      e = "\u20ac",
+      i = "",
       f = "0";
-  if (a > d) e = " MLD \u20ac", a = a / d, a = Math.round(100 * a) / 100;
-  else if (a >= c) e = " MLN \u20ac", a = a / c;
+  if (a >= c) i = "m", a = a / c;
   else {
       var g = a.toString().substring(0, h);
-      a > b ? e = " \u20ac" : a = Math.round(100 * a) / 100
+      a > b ? i = "" : a = Math.round(100 * a) / 100
   }
   var g = a.toString(),
       h = a.toString().indexOf(".");
   h > -1 && (g = a.toString().substring(0, h));
   f = g.substring(0, g.length - 3) + "." + g.substring(g.length - 3, g.length);
   a < b && (f = g + "," + a.toString().substring(h + 1, h + 3));
-  return f + e
+  return e + f + i
 }
 
 /******************************************VARIABLES GLOBALES**********************************************/
