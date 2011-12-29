@@ -591,7 +591,6 @@ var kk = 11,
 			
 var curRegDataset, _useAbsoluteValues = !0;
     _selectedFunctionID = null;
-    //interp = d3.interpolateRgb(d3.rgb(255, 207, 134), d3.rgb(43, 140, 190));
   	interp = d3.interpolateRgb(d3.rgb(254, 217, 118), d3.rgb(227, 26, 28));
     availableYears = [2006, 2007, 2008, 2009, 2010];
     _dataLoaded = !1;
