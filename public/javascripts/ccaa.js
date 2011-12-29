@@ -396,7 +396,7 @@ function showRegionInfo(a) {
 }
 /*Dependiendo de modo de visualización actual, modifica la etiqueta del infoBox*/
 function updateInfoDesc() {
-    d3.select("#infoDesc").text(currentMode == MODE_PER_PERSON ? "budget por persona" : "budget total")
+    d3.select("#infoDesc").text(currentMode == MODE_PER_PERSON ? "presupuesto por persona" : "presupuesto total")
 }
 
 /*********************************FUNCIONES DE CALCULO************************************************/
