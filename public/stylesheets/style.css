@@ -46,6 +46,41 @@ body {
     background-repeat: no-repeat;
 }
 
+.quickstart {
+    background-color: #F5F5F5;
+    background-image: -moz-linear-gradient(#F9F9F9, #F5F5F5);
+    background-repeat: repeat-x;
+    border-bottom: 1px solid #EEEEEE;
+    border-top: 1px solid #FFFFFF;
+}
+.quickstart .container {
+    margin-bottom: 0;
+}
+.quickstart .row {
+    box-shadow: 1px 0 0 #F9F9F9;
+    margin: 0 -20px;
+}
+.quickstart [class*="span"] {
+    border-left: 1px solid #EEEEEE;
+    box-shadow: 1px 0 0 #F9F9F9 inset;
+    height: 67px;
+    margin-left: 0;
+    padding: 17px 20px 26px;
+    width: 285px;
+}
+.quickstart [class*="span"]:last-child {
+    border-right: 1px solid #EEEEEE;
+    width: 286px;
+}
+.quickstart h6, .quickstart p {
+    color: #333333;
+    line-height: 18px;
+    margin-bottom: 9px;
+    text-align: center;
+}
+.quickstart h6, .quickstart h6 a {
+    color: #999999;
+}
 section {
     padding-top: 40px;
 }
