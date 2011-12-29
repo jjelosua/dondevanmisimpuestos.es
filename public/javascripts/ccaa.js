@@ -4,7 +4,7 @@ function start() {
   showVis(!1);
 	$("#type").change(function () {changeCurrentMode($(this).val())});
 	currentMode = MODE_PER_PERSON;
-	currentYear = availableYears[0];
+	currentYear = availableYears[availableYears.length-1];
 	updatePlayBtn();
 	loadPopulation();
 }
