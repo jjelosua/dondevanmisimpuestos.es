@@ -385,9 +385,14 @@ function showRegionInfo(a) {
 		  .transition(500)
 		  .style("width", 190 * j(c[g]) / 100 + "px");
 		
-		l = k(c[g]);
-		d3.select("#infoAvgText")
-		  .text("sobre media país: " + (l > 0 ? "+" + l : l) + " % ");
+		if ( currentMode == MODE_PER_PERSON ) {
+  		l = k(c[g]);
+  		d3.select("#infoAvgText")
+  		  .text("sobre media país: " + (l > 0 ? "+" + l : l) + " % ");
+    } else {
+  		d3.select("#infoAvgText").text("");
+    }
+    
 		updateInfoDesc()
   }
   d3.select("#infobox")
