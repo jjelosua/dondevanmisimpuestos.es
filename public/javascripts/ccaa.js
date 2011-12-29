@@ -380,7 +380,7 @@ function showRegionInfo(a) {
     d3.select("#infoValue")
 		  .html(l);
 		d3.select("#infoAvgBox")
-		  .style("visibility", "visible");
+	    .style("visibility", currentMode == MODE_PER_PERSON ? "visible" : "hidden");
 		d3.select("#infoBar")
 		  .transition(500)
 		  .style("width", 190 * j(c[g]) / 100 + "px");
