@@ -561,7 +561,7 @@ function formatValueShort(a) {
       e = "\u20ac",
       i = "",
       f = "0";
-  if (a >= c) i = " mill", a = a / c;
+  if (a >= c) i = "M", a = a / c;
   else {
       var g = a.toString().substring(0, h);
       a > b ? i = "" : a = Math.round(100 * a) / 100
