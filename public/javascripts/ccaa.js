@@ -67,7 +67,7 @@ function checkDataLaoded() {
 
 /*Carga los datos de los presupuestos*/
 function loadBalance() {
-  var a = "/data/Budget_2006_2010.csv";
+  var a = "/data/Budget_2006_2011.csv";
   d3.csv(a, function (a) {
     balanceByYearAndByRegion = d3.nest()
                   								.key(function (a) {return a.Ano})
@@ -592,7 +592,7 @@ var kk = 11,
 var curRegDataset, _useAbsoluteValues = !0;
     _selectedFunctionID = null;
   	interp = d3.interpolateRgb(d3.rgb(254, 217, 118), d3.rgb(227, 26, 28));
-    availableYears = [2006, 2007, 2008, 2009, 2010];
+    availableYears = [2006, 2007, 2008, 2009, 2010, 2011];
     _dataLoaded = !1;
     loadedData = 0;
     maxTotalData = availableYears.length;
