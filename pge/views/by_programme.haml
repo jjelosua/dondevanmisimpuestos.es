@@ -1,0 +1,33 @@
+%h1 Gastos por programa
+
+%table#pge.display
+	%thead
+		%tr
+			%th Programa
+			-@years.each do |year|
+				%th{:class => "year#{year}"} #{year}
+			%th %
+		
+	%tbody
+		-@programmes.each do |heading, p|
+			%tr{:class => p[:is_internal_transfer] ? "internalTransfer" : ""}
+				%td
+					%a{:href=>"/programme/#{p[:programme]}"} #{heading} #{p[:description]} 
+				-@years.each do |year|
+					%td.right{:class => "year#{year}"} #{p[:expenses][year]}
+				%td.right #{p[:delta]}
+					
+	%tfooter
+		%tr
+			%td Total Consolidado (excluye transferencias internas)
+			-@years.each do |year|
+				%td.right{:class => "year#{year}"} #{@totals[year]}
+			%td.right #{@totals[:delta]}
+
+%p	Todas las cantidades en miles de euros.
+
+%p 
+	Mostrar/ocultar año: 
+	-@years.each do |year|
+		%a{:href=>"#", :onclick=>"toggleYear(#{year}); return false"} #{year}
+	

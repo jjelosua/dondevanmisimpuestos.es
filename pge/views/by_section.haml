@@ -1,0 +1,27 @@
+%h1 Gastos por sección
+
+%table#pge.display
+	%thead
+		%tr
+			%th Sección
+			-@years.each do |year|
+				%th #{year}
+			%th %
+				
+	%tbody
+		-@sections.each do |heading, s|
+			%tr
+				%td
+					%a{:href=>"/section/#{s[:section_id]}"} #{heading}
+				-@years.each do |year|
+					%td.right #{s[:expenses][year]}
+				%td.right #{s[:delta]}
+
+	%tfooter
+		%tr
+			%td Total
+			-@years.each do |year|
+				%td.right #{@totals[year]}
+			%td.right #{@totals[:delta]}
+
+Todas las cantidades en miles de euros.

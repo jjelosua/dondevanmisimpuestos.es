@@ -1,0 +1,59 @@
+%h1 Desglose por conceptos
+
+-if not @entity.nil? and not @section.nil?
+	%h2 #{@section.description}
+	%h3 #{@entity.description}
+	%h4 #{@programme_name}
+-else
+	%h2 #{@programme_name}
+	%h4 Entidades responsables:
+	%ul
+		-@programme_breakdown.each do |pb|
+			%li 
+				%a{:href=>"/section/#{pb[:section]}/entity/#{pb[:entity]}/programme/#{pb[:programme]}"} #{pb[:description]}
+
+:css
+	tr.row_level_1 { font-weight: bold;}
+	tr.row_level_2 .heading { padding-left: 20px;}
+	tr.row_level_3 .heading { padding-left: 30px;}
+	tr.row_level_5 .heading { padding-left: 40px;}
+	
+%table#pge.display
+	%thead
+		%tr
+			%th Descripción
+			-@years.each do |year|
+				%th{:class => "year#{year}"} #{year}
+			%th %
+
+	%tbody
+		-@expenses.each do |heading, e|
+			%tr{:class => e[:parent_concept].nil? ? |
+									"expense row_level_1" :		 |
+									"expense parent#{e[:parent_concept]} row_level_#{e[:concept].length}" } |
+				%td{:class=>"heading"}
+					#{heading} 
+					-if e[:concept].length < 5
+						%a{:href=>"#", :onclick=>"toggleCategory(#{e[:concept]}); return false"} +
+				-@years.each do |year|
+					%td.right{:class => "year#{year}"} #{e[:expenses][year]}
+				%td.right #{e[:delta]}
+				
+	%tfooter
+		%tr{:class => "row_level_1"}
+			%td Total
+			-@years.each do |year|
+				%td.right{:class => "year#{year}"} #{@totals[year]}
+			%td.right #{@totals[:delta]}
+
+%p	Todas las cantidades en miles de euros.
+
+%p 
+	-# NOTE: fnSetColumnVis from DataTables can't handle my 'complex' header/footer.
+	-# So until we have a better solution (re-rendering the table) this will have to do.
+	Mostrar/ocultar año: 
+	-@years.each do |year|
+		%a{:href=>"javascript:void(0)", :onclick=>"toggleYear(#{year});"} #{year}
+
+%p
+	%a{:href=>"javascript:void(0)", :onclick=>"hideChildRows();"} Ocultar subconceptos
