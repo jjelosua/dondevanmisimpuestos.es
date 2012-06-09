@@ -4,13 +4,13 @@ require "bundler/setup"
 require 'sinatra/base'
 require 'haml'
 
-require 'app/model'
+require './app/model'
 
 class StateBudgetApp < Sinatra::Base
   
   # Enable serving of static files
   set :static, true
-  set :public, 'public'
+  set :public_folder, 'public'
   
   get '/' do
     haml :index

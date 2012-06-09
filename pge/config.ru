@@ -5,5 +5,5 @@ require 'bundler'
 Bundler.require(:default, RACK_ENV)
 
 require 'sinatra'
-require 'app/app'
+require './app/app'
 run StateBudgetApp
